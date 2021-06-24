@@ -12,16 +12,8 @@ import {
   INITIAL_USERS,
 } from "../types";
 
-let githubClientID;
-let githubClientSecret;
-
-if (process.env.NODE_ENV !== "production") {
-  githubClientID = process.env.REACT_APP_GITHUB_CLIENT_ID;
-  githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
-} else {
-  githubClientID = process.env.GITHUB_CLIENT_ID;
-  githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
-}
+let githubClientID = process.env.GITHUB_CLIENT_ID;
+let githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
 
 const GithubState = (props) => {
   const initialState = {

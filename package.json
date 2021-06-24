@@ -3,29 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.1.2",
     "@tailwindcss/forms": "^0.3.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "date-fns": "^2.22.1",
+    "error": "^10.4.0",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "TAILWIND_MODE=watch next start",
+    "start": "next start",
     "build": "next build",
-    "dev": "TAILWIND_MODE=watch next dev",
-    "test": "next test"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "dev": "TAILWIND_MODE=watch next dev"
   },
   "browserslist": {
     "production": [
@@ -40,8 +33,10 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.2"
+    "autoprefixer": "^10.2.6",
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }
