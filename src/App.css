@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-gray-100;
+}
+
+.alert-yellow {
+  @apply bg-yellow-50 border-yellow-400 text-yellow-700;
+}
+
+.alert-red {
+  @apply bg-red-50 border-red-400 text-red-700;
+}
+
+.alert-blue {
+  @apply bg-blue-50 border-blue-400 text-blue-700;
+}
+
+.user-organization {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.user-user {
+  @apply bg-green-100 text-green-800;
+}
